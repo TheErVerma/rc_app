@@ -75,7 +75,7 @@ function HomePage() {
                 <div className="container py-5 pt-lg-0">
                     <div className="row gx-0">
                         <div className="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                            <div className="bg-white shadow d-flex align-items-center h-100 px-5">
+                            <div className="bg-white shadow d-flex align-items-center h-100 p-5">
                                 <div className="d-flex">
                                     <div className="flex-shrink-0 btn-lg-square rounded-circle bg-light">
                                         {/* <i className="fa fa-times text-primary"></i> */}
@@ -89,7 +89,7 @@ function HomePage() {
                             </div>
                         </div>
                         <div className="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                            <div className="bg-white shadow d-flex align-items-center h-100 px-5" >
+                            <div className="bg-white shadow d-flex align-items-center h-100 p-5" >
                                 <div className="d-flex">
                                     <div className="flex-shrink-0 btn-lg-square rounded-circle bg-light">
                                         {/* <i className="fa fa-users text-primary"></i> */}
@@ -103,7 +103,7 @@ function HomePage() {
                             </div>
                         </div>
                         <div className="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                            <div className="bg-white shadow d-flex align-items-center h-100 px-5" >
+                            <div className="bg-white shadow d-flex align-items-center h-100 p-5" >
                                 <div className="d-flex">
                                     <div className="flex-shrink-0 btn-lg-square rounded-circle bg-light">
                                         {/* <i className="fa fa-phone text-primary"></i> */}
@@ -141,7 +141,7 @@ function HomePage() {
                                 <div className="col-12 col-sm-6 col-lg-12">
                                     <div className="border-start ps-4">
                                         {/* <i className="fa fa-award fa-3x text-primary mb-3"></i> */}
-                                        <FontAwesomeIcon icon={faAward} className="text-primary" size="100px" />
+                                        <FontAwesomeIcon icon={faAward} className="text-primary" size="10x" />
                                         <h4 className="mb-3">Award Winning</h4>
                                         <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
                                     </div>
@@ -185,9 +185,6 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            
-
-
             
             <div className="container-xxl py-5">
                 <div className="container">

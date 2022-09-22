@@ -33,7 +33,7 @@ function MainFooter() {
                             <Link className="btn btn-link" to="">Contact Us</Link>
                             <Link className="btn btn-link" to="">Our Services</Link>
                             <Link className="btn btn-link" to="">Terms & Condition</Link>
-                            <Link cla1ssName="btn btn-link" to="">Support</Link>
+                            <Link className="btn btn-link" to="">Support</Link>
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <h4 className="text-white mb-4">Newsletter</h4>

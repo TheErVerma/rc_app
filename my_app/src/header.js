@@ -4,6 +4,7 @@ import {Outlet, NavLink} from 'react-router-dom'
 function MainHeader() {
     return (
         <div>
+            
             <div className="container-fluid bg-dark text-light px-0 py-2">
                 <div className="row gx-0 d-none d-lg-flex">
                     <div className="col-lg-7 px-5 text-start">
@@ -40,9 +41,9 @@ function MainHeader() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto p-4 p-lg-0">
-                        <NavLink activeClassName="active" to="/" className="nav-item nav-link">Home</NavLink>
-                        <NavLink activeClassName="active" to="/about" className="nav-item nav-link">About</NavLink>
-                        <NavLink activeClassName="active" to="/contact" className="nav-item nav-link">Contact</NavLink>
+                        <NavLink to="/" className="nav-item nav-link">Home</NavLink>
+                        <NavLink to="/about" className="nav-item nav-link">About</NavLink>
+                        <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
                     </div>
                     <NavLink to="" className="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i className="fa fa-arrow-right ms-3"></i></NavLink>
                 </div>
