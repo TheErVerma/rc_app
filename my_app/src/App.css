@@ -348,10 +348,12 @@ h6,
   white-space: nowrap;
   overflow: hidden;
   transition: .3s;
+  opacity: 0;
 }
 
 .service-item:hover .service-text .btn {
   width: 112px;
+  opacity: 1;
 }
 
 

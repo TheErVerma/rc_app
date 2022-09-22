@@ -1,4 +1,26 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes, faUsers, faPhone, faAward, faCheck, faTools, faPlus, faEye, faLink } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom";
+import carousel_1 from '../img/carousel-1.jpg';
+import carousel_2 from '../img/carousel-2.jpg';
+import about_img from '../img/about.jpg';
+import service_1 from '../img/service-1.jpg';
+import icon_3 from '../img/icon/icon-3.png';
+import service_2 from "../img/service-2.jpg";
+import icon_6 from "../img/icon/icon-6.png";
+import service_3 from "../img/service-3.jpg";
+import icon_5 from "../img/icon/icon-5.png";
+import service_4 from "../img/service-4.jpg";
+import icon_4 from "../img/icon/icon-4.png";
+import service_5 from "../img/service-5.jpg";
+import icon_8 from "../img/icon/icon-8.png";
+import service_6 from "../img/service-6.jpg";
+import icon_2 from "../img/icon/icon-2.png";
+import tema_1 from "../img/team-1.jpg";
+import tema_2 from "../img/team-2.jpg";
+import tema_3 from "../img/team-3.jpg";
+import testi_1 from "../img/testimonial-1.jpg";
+import testi_2 from "../img/testimonial-2.jpg";
 
 function HomePage() {
     return (
@@ -7,7 +29,7 @@ function HomePage() {
                 <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img className="w-100" src="img/carousel-1.jpg" alt="Image" />
+                            <img className="w-100" src={carousel_1} alt="Image" />
                                 <div className="carousel-caption">
                                     <div className="container">
                                         <div className="row justify-content-center">
@@ -20,7 +42,7 @@ function HomePage() {
                                 </div>
                         </div>
                         <div className="carousel-item">
-                            <img className="w-100" src="img/carousel-2.jpg" alt="Image" />
+                            <img className="w-100" src={carousel_2} alt="Image" />
                                 <div className="carousel-caption">
                                     <div className="container">
                                         <div className="row justify-content-center">
@@ -56,7 +78,8 @@ function HomePage() {
                             <div className="bg-white shadow d-flex align-items-center h-100 px-5">
                                 <div className="d-flex">
                                     <div className="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                        <i className="fa fa-times text-primary"></i>
+                                        {/* <i className="fa fa-times text-primary"></i> */}
+                                        <FontAwesomeIcon icon={faTimes} className="text-primary" />
                                     </div>
                                     <div className="ps-3">
                                         <h4>No Hidden Cost</h4>
@@ -69,7 +92,8 @@ function HomePage() {
                             <div className="bg-white shadow d-flex align-items-center h-100 px-5" >
                                 <div className="d-flex">
                                     <div className="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                        <i className="fa fa-users text-primary"></i>
+                                        {/* <i className="fa fa-users text-primary"></i> */}
+                                        <FontAwesomeIcon icon={faUsers} className="text-primary" />
                                     </div>
                                     <div className="ps-3">
                                         <h4>Dedicated Team</h4>
@@ -82,7 +106,8 @@ function HomePage() {
                             <div className="bg-white shadow d-flex align-items-center h-100 px-5" >
                                 <div className="d-flex">
                                     <div className="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                        <i className="fa fa-phone text-primary"></i>
+                                        {/* <i className="fa fa-phone text-primary"></i> */}
+                                        <FontAwesomeIcon icon={faPhone} className="text-primary" />
                                     </div>
                                     <div className="ps-3">
                                         <h4>24/7 Available</h4>
@@ -102,7 +127,7 @@ function HomePage() {
                 <div className="container">
                     <div className="row g-5 align-items-end">
                         <div className="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                            <img className="img-fluid rounded" data-wow-delay="0.1s" src="img/about.jpg" />
+                            <img className="img-fluid rounded" data-wow-delay="0.1s" src={about_img} />
                         </div>
                         <div className="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
                             <h1 className="display-1 text-primary mb-0">25</h1>
@@ -115,14 +140,16 @@ function HomePage() {
                             <div className="row g-5">
                                 <div className="col-12 col-sm-6 col-lg-12">
                                     <div className="border-start ps-4">
-                                        <i className="fa fa-award fa-3x text-primary mb-3"></i>
+                                        {/* <i className="fa fa-award fa-3x text-primary mb-3"></i> */}
+                                        <FontAwesomeIcon icon={faAward} className="text-primary" size="100px" />
                                         <h4 className="mb-3">Award Winning</h4>
                                         <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
                                     </div>
                                 </div>
                                 <div className="col-12 col-sm-6 col-lg-12">
                                     <div className="border-start ps-4">
-                                        <i className="fa fa-users fa-3x text-primary mb-3"></i>
+                                        {/* <i className="fa fa-users fa-3x text-primary mb-3"></i> */}
+                                        <FontAwesomeIcon icon={faUsers} className="text-primary" />
                                         <h4 className="mb-3">Dedicated Team</h4>
                                         <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
                                     </div>
@@ -178,7 +205,8 @@ function HomePage() {
                                         <div className="col-12 wow fadeIn" data-wow-delay="0.3s">
                                             <div className="text-center rounded py-5 px-4" >
                                                 <div className="btn-square bg-light rounded-circle mx-auto mb-4" >
-                                                    <i className="fa fa-check fa-3x text-primary"></i>
+                                                    {/* <i className="fa fa-check fa-3x text-primary"></i> */}
+                                                    <FontAwesomeIcon icon={faCheck} className="text-primary" />
                                                 </div>
                                                 <h4 className="mb-0">100% Satisfaction</h4>
                                             </div>
@@ -186,7 +214,8 @@ function HomePage() {
                                         <div className="col-12 wow fadeIn" data-wow-delay="0.5s">
                                             <div className="text-center rounded py-5 px-4" >
                                                 <div className="btn-square bg-light rounded-circle mx-auto mb-4" >
-                                                    <i className="fa fa-users fa-3x text-primary"></i>
+                                                    {/* <i className="fa fa-users fa-3x text-primary"></i> */}
+                                                    <FontAwesomeIcon icon={faUsers} className="text-primary" />
                                                 </div>
                                                 <h4 className="mb-0">Dedicated Team</h4>
                                             </div>
@@ -196,7 +225,8 @@ function HomePage() {
                                 <div className="col-md-6 wow fadeIn" data-wow-delay="0.7s">
                                     <div className="text-center rounded py-5 px-4" >
                                         <div className="btn-square bg-light rounded-circle mx-auto mb-4" >
-                                            <i className="fa fa-tools fa-3x text-primary"></i>
+                                            {/* <i className="fa fa-tools fa-3x text-primary"></i> */}
+                                            <FontAwesomeIcon icon={faTools} className="text-primary" />
                                         </div>
                                         <h4 className="mb-0">Modern Equipment</h4>
                                     </div>
@@ -220,90 +250,103 @@ function HomePage() {
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="service-item rounded d-flex h-100">
                                 <div className="service-img rounded">
-                                    <img className="img-fluid" src="img/service-1.jpg" alt="" />
+                                    <img className="img-fluid" src={service_1} alt="" />
                                 </div>
                                 <div className="service-text rounded p-5">
                                     <div className="btn-square rounded-circle mx-auto mb-3">
-                                        <img className="img-fluid" src="img/icon/icon-3.png" alt="Icon" />
+                                        <img className="img-fluid" src={icon_3} alt="Icon" />
                                     </div>
                                     <h4 className="mb-3">Landscaping</h4>
                                     <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <Link className="btn btn-sm" to=""><i className="fa fa-plus text-primary me-2"></i>Read More</Link>
+                                    <Link className="btn btn-sm" to="">
+                                        {/* <i className="fa fa-plus text-primary me-2"></i> */}
+                                        <FontAwesomeIcon icon={faPlus} className="text-primary" />Read More
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div className="service-item rounded d-flex h-100">
                                 <div className="service-img rounded">
-                                    <img className="img-fluid" src="img/service-2.jpg" alt="" />
+                                    <img className="img-fluid" src={service_2} alt="" />
                                 </div>
                                 <div className="service-text rounded p-5">
                                     <div className="btn-square rounded-circle mx-auto mb-3">
-                                        <img className="img-fluid" src="img/icon/icon-6.png" alt="Icon" />
+                                        <img className="img-fluid" src={icon_6} alt="Icon" />
                                     </div>
                                     <h4 className="mb-3">Pruning plants</h4>
                                     <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <Link className="btn btn-sm" to=""><i className="fa fa-plus text-primary me-2"></i>Read More</Link>
+                                    <Link className="btn btn-sm" to="">
+                                        {/* <i className="fa fa-plus text-primary me-2"></i> */}
+                                        <FontAwesomeIcon icon={faPlus} className="text-primary" />Read More</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div className="service-item rounded d-flex h-100">
                                 <div className="service-img rounded">
-                                    <img className="img-fluid" src="img/service-3.jpg" alt="" />
+                                    <img className="img-fluid" src={service_3} alt="" />
                                 </div>
                                 <div className="service-text rounded p-5">
                                     <div className="btn-square rounded-circle mx-auto mb-3">
-                                        <img className="img-fluid" src="img/icon/icon-5.png" alt="Icon" />
+                                        <img className="img-fluid" src={icon_5} alt="Icon" />
                                     </div>
                                     <h4 className="mb-3">Irrigation & Drainage</h4>
                                     <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <Link className="btn btn-sm" to=""><i className="fa fa-plus text-primary me-2"></i>Read More</Link>
+                                    <Link className="btn btn-sm" to="">
+                                        {/* <i className="fa fa-plus text-primary me-2"></i> */}
+                                        <FontAwesomeIcon icon={faPlus} className="text-primary" />Read More</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="service-item rounded d-flex h-100">
                                 <div className="service-img rounded">
-                                    <img className="img-fluid" src="img/service-4.jpg" alt="" />
+                                    <img className="img-fluid" src={service_4} alt="" />
                                 </div>
                                 <div className="service-text rounded p-5">
                                     <div className="btn-square rounded-circle mx-auto mb-3">
-                                        <img className="img-fluid" src="img/icon/icon-4.png" alt="Icon" />
+                                        <img className="img-fluid" src={icon_4} alt="Icon" />
                                     </div>
                                     <h4 className="mb-3">Garden Maintenance </h4>
                                     <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <Link className="btn btn-sm" to=""><i className="fa fa-plus text-primary me-2"></i>Read More</Link>
+                                    <Link className="btn btn-sm" to="">
+                                        {/* <i className="fa fa-plus text-primary me-2"></i> */}
+                                        <FontAwesomeIcon icon={faPlus} className="text-primary" />Read More</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div className="service-item rounded d-flex h-100">
                                 <div className="service-img rounded">
-                                    <img className="img-fluid" src="img/service-5.jpg" alt="" />
+                                    <img className="img-fluid" src={service_5} alt="" />
                                 </div>
                                 <div className="service-text rounded p-5">
                                     <div className="btn-square rounded-circle mx-auto mb-3">
-                                        <img className="img-fluid" src="img/icon/icon-8.png" alt="Icon" />
+                                        <img className="img-fluid" src={icon_8} alt="Icon" />
                                     </div>
                                     <h4 className="mb-3">Green Technology</h4>
                                     <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <Link className="btn btn-sm" to=""><i className="fa fa-plus text-primary me-2"></i>Read More</Link>
+                                    <Link className="btn btn-sm" to="">
+                                        {/* <i className="fa fa-plus text-primary me-2"></i> */}
+                                        <FontAwesomeIcon icon={faPlus} className="text-primary" />Read More</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div className="service-item rounded d-flex h-100">
                                 <div className="service-img rounded">
-                                    <img className="img-fluid" src="img/service-6.jpg" alt="" />
+                                    <img className="img-fluid" src={service_6} alt="" />
                                 </div>
                                 <div className="service-text rounded p-5">
                                     <div className="btn-square rounded-circle mx-auto mb-3">
-                                        <img className="img-fluid" src="img/icon/icon-2.png" alt="Icon" />
+                                        <img className="img-fluid" src={icon_2} alt="Icon" />
                                     </div>
                                     <h4 className="mb-3">Urban Gardening</h4>
                                     <p className="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
-                                    <Link className="btn btn-sm" to=""><i className="fa fa-plus text-primary me-2"></i>Read More</Link>
+                                    <Link className="btn btn-sm" to="">
+                                        {/* <i className="fa fa-plus text-primary me-2"></i> */}
+                                        <FontAwesomeIcon icon={faPlus} className="text-primary" />Read More</Link>
                                 </div>
                             </div>
                         </div>
@@ -314,7 +357,7 @@ function HomePage() {
 
 
             
-            <div className="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
+            <div className="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src={carousel_2}>
                 <div className="container py-5">
                     <div className="row justify-content-center">
                         <div className="col-lg-7">
@@ -382,72 +425,108 @@ function HomePage() {
                     <div className="row g-4 portfolio-container">
                         <div className="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                             <div className="portfolio-inner rounded">
-                                <img className="img-fluid" src="img/service-1.jpg" alt="" />
+                                <img className="img-fluid" src={service_1} alt="" />
                                     <div className="portfolio-text">
                                         <h4 className="text-white mb-4">Landscaping</h4>
                                         <div className="d-flex">
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="img/service-1.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></Link>
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to=""><i className="fa fa-link"></i></Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to={service_1} data-lightbox="portfolio">
+                                                {/* <i className="fa fa-eye"></i> */}
+                                                <FontAwesomeIcon icon={faEye} />
+                                                </Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="">
+                                                {/* <i className="fa fa-link"></i> */}
+                                                <FontAwesomeIcon icon={faLink} />
+                                                </Link>
                                         </div>
                                     </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
                             <div className="portfolio-inner rounded">
-                                <img className="img-fluid" src="img/service-2.jpg" alt="" />
+                                <img className="img-fluid" src={service_2} alt="" />
                                     <div className="portfolio-text">
                                         <h4 className="text-white mb-4">Pruning plants</h4>
                                         <div className="d-flex">
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="img/service-2.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></Link>
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to=""><i className="fa fa-link"></i></Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to={service_2} data-lightbox="portfolio">
+                                                {/* <i className="fa fa-eye"></i> */}
+                                                <FontAwesomeIcon icon={faEye} />
+                                                </Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="">
+                                                {/* <i className="fa fa-link"></i> */}
+                                                <FontAwesomeIcon icon={faLink} />
+                                                </Link>
                                         </div>
                                     </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
                             <div className="portfolio-inner rounded">
-                                <img className="img-fluid" src="img/service-3.jpg" alt="" />
+                                <img className="img-fluid" src={service_3} alt="" />
                                     <div className="portfolio-text">
                                         <h4 className="text-white mb-4">Irrigation & Drainage</h4>
                                         <div className="d-flex">
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="img/service-3.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></Link>
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to=""><i className="fa fa-link"></i></Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to={service_3} data-lightbox="portfolio">
+                                                {/* <i className="fa fa-eye"></i> */}
+                                                <FontAwesomeIcon icon={faEye} />
+                                                </Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="">
+                                                {/* <i className="fa fa-link"></i> */}
+                                                <FontAwesomeIcon icon={faLink} />
+                                                </Link>
                                         </div>
                                     </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                             <div className="portfolio-inner rounded">
-                                <img className="img-fluid" src="img/service-4.jpg" alt="" />
+                                <img className="img-fluid" src={service_4} alt="" />
                                     <div className="portfolio-text">
                                         <h4 className="text-white mb-4">Garden Maintenance</h4>
                                         <div className="d-flex">
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="img/service-4.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></Link>
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to=""><i className="fa fa-link"></i></Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to={service_4} data-lightbox="portfolio">
+                                                {/* <i className="fa fa-eye"></i> */}
+                                                <FontAwesomeIcon icon={faEye} />
+                                                </Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="">
+                                                {/* <i className="fa fa-link"></i> */}
+                                                <FontAwesomeIcon icon={faLink} />
+                                                </Link>
                                         </div>
                                     </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
                             <div className="portfolio-inner rounded">
-                                <img className="img-fluid" src="img/service-5.jpg" alt="" />
+                                <img className="img-fluid" src={service_5} alt="" />
                                     <div className="portfolio-text">
                                         <h4 className="text-white mb-4">Green Technology</h4>
                                         <div className="d-flex">
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="img/service-5.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></Link>
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to=""><i className="fa fa-link"></i></Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to={service_5} data-lightbox="portfolio">
+                                                {/* <i className="fa fa-eye"></i> */}
+                                                <FontAwesomeIcon icon={faEye} />
+                                                </Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="">
+                                                {/* <i className="fa fa-link"></i> */}
+                                                <FontAwesomeIcon icon={faLink} />
+                                                </Link>
                                         </div>
                                     </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
                             <div className="portfolio-inner rounded">
-                                <img className="img-fluid" src="img/service-6.jpg" alt="" />
+                                <img className="img-fluid" src={service_6} alt="" />
                                     <div className="portfolio-text">
                                         <h4 className="text-white mb-4">Urban Gardening</h4>
                                         <div className="d-flex">
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="img/service-6.jpg" data-lightbox="portfolio"><i className="fa fa-eye"></i></Link>
-                                            <Link className="btn btn-lg-square rounded-circle mx-2" to=""><i className="fa fa-link"></i></Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to={service_6} data-lightbox="portfolio">
+                                                {/* <i className="fa fa-eye"></i> */}
+                                                <FontAwesomeIcon icon={faEye} />
+                                                </Link>
+                                            <Link className="btn btn-lg-square rounded-circle mx-2" to="">
+                                                {/* <i className="fa fa-link"></i> */}
+                                                <FontAwesomeIcon icon={faLink} />
+                                                </Link>
                                         </div>
                                     </div>
                             </div>
@@ -468,21 +547,30 @@ function HomePage() {
                     <div className="row g-4">
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div className="team-item rounded">
-                                <img className="img-fluid" src="img/team-1.jpg" alt="" />
+                                <img className="img-fluid" src={tema_1} alt="" />
                                     <div className="team-text">
                                         <h4 className="mb-0">Doris Jordan</h4>
                                         <p className="text-primary">Landscape Designer</p>
                                         <div className="team-social d-flex">
-                                            <Link className="btn btn-square rounded-circle me-2" to=""><i className="fab fa-facebook-f"></i></Link>
-                                            <Link className="btn btn-square rounded-circle me-2" to=""><i className="fab fa-twitter"></i></Link>
-                                            <Link className="btn btn-square rounded-circle me-2" to=""><i className="fab fa-instagram"></i></Link>
+                                            <Link className="btn btn-square rounded-circle me-2" to="">
+                                                {/* <i className="fab fa-facebook-f"></i> */}
+                                                
+                                                </Link>
+                                            <Link className="btn btn-square rounded-circle me-2" to="">
+                                                {/* <i className="fab fa-twitter"></i> */}
+                                                
+                                                </Link>
+                                            <Link className="btn btn-square rounded-circle me-2" to="">
+                                                {/* <i className="fab fa-instagram"></i> */}
+                                                
+                                                </Link>
                                         </div>
                                     </div>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div className="team-item rounded">
-                                <img className="img-fluid" src="img/team-2.jpg" alt="" />
+                                <img className="img-fluid" src={tema_2} alt="" />
                                     <div className="team-text">
                                         <h4 className="mb-0">Johnny Ramirez</h4>
                                         <p className="text-primary">Garden Designer</p>
@@ -496,7 +584,7 @@ function HomePage() {
                         </div>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div className="team-item rounded">
-                                <img className="img-fluid" src="img/team-3.jpg" alt="" />
+                                <img className="img-fluid" src={tema_3} alt="" />
                                     <div className="team-text">
                                         <h4 className="mb-0">Diana Wagner</h4>
                                         <p className="text-primary">Senior Gardener</p>
@@ -527,13 +615,13 @@ function HomePage() {
                         <div className="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
                             <div className="owl-carousel testimonial-carousel">
                                 <div className="testimonial-item">
-                                    <img className="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt="" />
+                                    <img className="img-fluid rounded mb-3" src={testi_1} alt="" />
                                         <p className="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
                                         <h4>Client Name</h4>
                                         <span>Profession</span>
                                 </div>
                                 <div className="testimonial-item">
-                                    <img className="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="" />
+                                    <img className="img-fluid rounded mb-3" src={testi_2} alt="" />
                                         <p className="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
                                         <h4>Client Name</h4>
                                         <span>Profession</span>
@@ -542,72 +630,7 @@ function HomePage() {
                         </div>
                     </div>
                 </div>
-            </div>
-            
-
-
-            
-            <div className="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-                <div className="container py-5">
-                    <div className="row g-5">
-                        <div className="col-lg-3 col-md-6">
-                            <h4 className="text-white mb-4">Our Office</h4>
-                            <p className="mb-2"><i className="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                            <p className="mb-2"><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                            <p className="mb-2"><i className="fa fa-envelope me-3"></i>info@example.com</p>
-                            <div className="d-flex pt-2">
-                                <Link className="btn btn-square btn-outline-light rounded-circle me-2" to=""><i className="fab fa-twitter"></i></Link>
-                                <Link className="btn btn-square btn-outline-light rounded-circle me-2" to=""><i className="fab fa-facebook-f"></i></Link>
-                                <Link className="btn btn-square btn-outline-light rounded-circle me-2" to=""><i className="fab fa-youtube"></i></Link>
-                                <Link className="btn btn-square btn-outline-light rounded-circle me-2" to=""><i className="fab fa-linkedin-in"></i></Link>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <h4 className="text-white mb-4">Services</h4>
-                            <Link className="btn btn-link" to="">Landscaping</Link>
-                            <Link className="btn btn-link" to="">Pruning plants</Link>
-                            <Link className="btn btn-link" to="">Urban Gardening</Link>
-                            <Link className="btn btn-link" to="">Garden Maintenance</Link>
-                            <Link className="btn btn-link" to="">Green Technology</Link>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <h4 className="text-white mb-4">Quick Links</h4>
-                            <Link className="btn btn-link" to="">About Us</Link>
-                            <Link className="btn btn-link" to="">Contact Us</Link>
-                            <Link className="btn btn-link" to="">Our Services</Link>
-                            <Link className="btn btn-link" to="">Terms & Condition</Link>
-                            <Link cla1ssName="btn btn-link" to="">Support</Link>
-                        </div>
-                        <div className="col-lg-3 col-md-6">
-                            <h4 className="text-white mb-4">Newsletter</h4>
-                            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                            <div className="position-relative w-100">
-                                <input className="form-control bg-light border-light w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"/>
-                                    <button type="button" className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-
-            
-            <div className="container-fluid copyright py-4">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <Link className="border-bottom" to="#">Your Site Name</Link>, All Right Reserved.
-                        </div>
-                        <div className="col-md-6 text-center text-md-end">
-                            
-                            Designed By <Link className="border-bottom" to="https://htmlcodex.com">HTML Codex</Link> Distributed By <Link to="https://themewagon.com">ThemeWagon</Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
+            </div>          
         </div>
     )
 }
