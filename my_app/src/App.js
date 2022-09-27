@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainHeader from './header';
 import MainFooter from './footer';
+import Datapage from './templates/datapage';
 import HomePage from './templates/home';
 import AboutPage from './templates/about';
 import ContactPage from './templates/contact';
@@ -15,6 +16,7 @@ function App() {
           <Route index path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/data" element={<Datapage />} />
           <Route path="*" element={<No_page_temp />} />
         </Route>
       </Routes>

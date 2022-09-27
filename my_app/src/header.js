@@ -44,6 +44,7 @@ function MainHeader() {
                         <NavLink to="/" className="nav-item nav-link">Home</NavLink>
                         <NavLink to="/about" className="nav-item nav-link">About</NavLink>
                         <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
+                        <NavLink to="/data" className="nav-item nav-link">Data</NavLink>
                     </div>
                     <NavLink to="" className="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i className="fa fa-arrow-right ms-3"></i></NavLink>
                 </div>
