@@ -1,12 +1,29 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import Database from "../firebase";
 import { ref, set, get, child, onValue } from "firebase/database";
+import { sh_auth } from "../firebase";
+import { signOut } from 'firebase/auth';
 
 function Datapage() {
     var [ptitle, setPtitle] = useState();
     var [pdesc, setPdesc] = useState();
     var [pprice, setPprice] = useState();
+    const history = useNavigate();
 
+    useEffect(() => {
+        if(sh_auth.currentUser == null){
+            history('/sign-in')
+        }
+    })
+
+    const logout = () => {
+        signOut(sh_auth).then(() => {
+            history('/sign-in')
+        }).catch((error) => {
+            console.log(error.message);
+        })
+    }
 
     var db = Database;
     var current_time = new Date();
@@ -26,7 +43,6 @@ function Datapage() {
         }
     }
 
-
     const starCountRef = ref(db, 'Products/');
     onValue(starCountRef, (snapshot) => {
         document.getElementById("my_products").innerHTML = "";
@@ -44,7 +60,6 @@ function Datapage() {
                         pro_title.className = "col border-start-0 border-end-0 border-bottom-0 border-top-0 border p-3"
                     }else{
                         pro_title.className = "col border-end-0 border-bottom-0 border-top-0 border p-3"
-
                     }
                     pro_title.innerHTML = value_2;
                     pro_row.appendChild(pro_title);
@@ -58,6 +73,7 @@ function Datapage() {
     return (
         <>
             <div className="container-xxl py-5">
+                <button className="btn btn-warning" onClick={logout} >Logout</button> 
                 <div className="container">
                     <h3 className="mb-4">Add Products</h3>
                     <form onSubmit={add_product} id="product_add_form" className="mb-5">
